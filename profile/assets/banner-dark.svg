@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="CluVi — Multimodal VQA · Agent for CS counselors">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151d1a"/>
+      <stop offset="1" stop-color="#1f2d28"/>
+    </linearGradient>
+    <linearGradient id="back" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5fb596"/>
+      <stop offset="1" stop-color="#1e5a48"/>
+    </linearGradient>
+    <linearGradient id="front" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f1f8f4" stop-opacity=".92"/>
+      <stop offset="1" stop-color="#9fd0bb" stop-opacity=".55"/>
+    </linearGradient>
+    <linearGradient id="photo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a3d36"/>
+      <stop offset="1" stop-color="#22322c"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#ffffff" fill-opacity=".06"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".55" stop-color="#fff" stop-opacity="1"/>
+    </linearGradient>
+    <mask id="fademask"><rect width="1280" height="320" fill="url(#fade)"/></mask>
+    <clipPath id="frame"><rect width="1280" height="320" rx="24"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1280" height="320" fill="url(#bg)"/>
+    <rect width="1280" height="320" fill="url(#dots)" mask="url(#fademask)"/>
+    <circle cx="1120" cy="40" r="220" fill="#3f9a7b" fill-opacity=".07"/>
+  </g>
+
+  <!-- logo: same motif as the org avatar -->
+  <rect x="134" y="86" width="132" height="132" rx="28" fill="url(#back)" fill-opacity=".9"/>
+  <rect x="92" y="114" width="122" height="122" rx="26" fill="url(#front)"/>
+
+  <text x="304" y="172" fill="#eaf4ef" font-family="'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="92" font-weight="700" letter-spacing="-2">CluVi</text>
+  <text x="308" y="220" fill="#93c7b2" font-family="'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="25" font-weight="500">Multimodal VQA · Agent for CS counselors</text>
+
+  <!-- photo with a detected box -->
+  <rect x="840" y="72" width="168" height="176" rx="16" fill="url(#photo)" stroke="#3b5a4f" stroke-width="2"/>
+  <path d="M862 226 L912 168 L942 200 L964 180 L990 226 Z" fill="#355046" fill-opacity=".5"/>
+  <circle cx="986" cy="98" r="11" fill="#3f6b5c"/>
+  <rect x="896" y="134" width="80" height="70" rx="6" fill="none" stroke="#7fd6b2" stroke-width="3" stroke-dasharray="9 6"/>
+  <rect x="896" y="110" width="74" height="22" rx="5" fill="#7fd6b2"/>
+  <text x="906" y="126" fill="#10201a" font-family="ui-monospace, 'SF Mono', Consolas, Menlo, monospace" font-size="14" font-weight="700">defect</text>
+
+  <!-- connector -->
+  <path d="M1008 160 C1030 160 1032 160 1052 160" stroke="#5c8f7d" stroke-width="2.5" stroke-dasharray="3 6" stroke-linecap="round" fill="none"/>
+
+  <!-- analysis card -->
+  <rect x="1056" y="84" width="176" height="152" rx="16" fill="#ffffff" fill-opacity=".05" stroke="#4a7768" stroke-width="2"/>
+  <g font-family="ui-monospace, 'SF Mono', Consolas, Menlo, monospace" font-size="17">
+    <text x="1076" y="122" fill="#6f9d8c">part</text>
+    <text x="1076" y="146" fill="#d6ece2" font-weight="600">sleeve</text>
+    <text x="1076" y="184" fill="#6f9d8c">defect</text>
+    <text x="1076" y="208" fill="#d6ece2" font-weight="600">tear_hole</text>
+  </g>
+
+  <text x="1232" y="290" text-anchor="end" fill="#5f8576" font-family="'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="500" letter-spacing="1">PROMETHEUS · TEAM 6 · 2026</text>
+</svg>
